@@ -7,7 +7,9 @@ model = OllamaLLM(model="llama3.2")
 template = """
 You are an expert at answering questions about a pizza restaurant.
 
+
 Here are some relevant reviews: {reviews}
+Do not mention the document ID or page content in your response.
 
 Here is the question to answer: {question}
 """
